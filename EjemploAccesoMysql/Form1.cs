@@ -32,6 +32,7 @@ namespace EjemploAccesoMysql
             conexion = new MySqlConnection("Server = 127.0.0.1; Database = almacen; Uid = root; Pwd = root; Port = 3306");
             conexion.Open();
 
+
             comando = new MySqlCommand("Select * from articulos", conexion);
             resultado = comando.ExecuteReader();
 
